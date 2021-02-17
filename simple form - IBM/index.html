@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple form</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="form-container">
+        <form id="orderForm" autocomplete="on">
+          <fieldset>
+            <legend>Customer Info</legend>
+            <p>
+              <label for="name">
+                Name:
+                <input
+                  type="text"
+                  autofocus
+                  required
+                  placeholder="Enter your name"
+                  id="name"
+                  size="50"
+                />
+              </label>
+            </p>
+            <p>
+              <label for="phone"
+                >Telephone:
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Pattern: +233 550 207 587"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                  multiple
+                  size="50"
+                />
+              </label>
+            </p>
+            <p>
+              <label for="email">
+                Email address:
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  size="50"
+                  placeholder="Enter your email address"
+                />
+              </label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Books</legend>
+            <p>
+              <label for="books">
+                <select name="books" id="books">
+                  <option value="Think">Think and grow rich</option>
+                  <option value="Richest">Richest man in Babylon</option>
+                  <option value="Digital">Digital minimalism</option>
+                  <option value="Rich">Rich dad poor dad</option>
+                  <option value="Predictable">Predictably Irrational</option>
+                </select>
+              </label>
+              <label for="maximum">
+                Quantity (Maximum 5):
+                <input
+                  type="number"
+                  name="maximum"
+                  id="maximum"
+                  min="1"
+                  max="5"
+                />
+              </label>
+            </p>
+            <p>
+                <input type="submit" value="Submit" id="submit"/>
+            </p>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
