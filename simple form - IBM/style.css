@@ -54,4 +54,26 @@ body, html, * {
   background-color: #3e53c9;
   color: white;
 }
+
+footer {
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer p span {
+  color: red;
+}
+
+footer p a {
+  color: green;
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */

@@ -49,3 +49,22 @@ body, html, *{
         }
     }
 }
+footer{
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+
+    p{
+        text-align: center;
+        span{
+            color: red;
+        }
+        a{
+            color: green;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>New Member form</title>
+  </head>
+  <body>
+    <main class="main-wrapper">
+      <div class="form-wrapper">
+        <div class="banner">
+          <div class="header">
+            <h1>New Member Registration</h1>
+          </div>
+        </div>
+        <form autocomplete="on">
+          <div class="inputs">
+            <div class="input-item">
+              <label for="first-name">First Name<span>*</span> </label>
+              <input
+                type="text"
+                required
+                placeholder="Enter your First name"
+                id="first-name"
+              />
+            </div>
+            <div class="input-item">
+              <label for="last-name">Last Name<span>*</span> </label>
+              <input
+                type="text"
+                required
+                placeholder="Enter your Last name"
+                id="last-name"
+              />
+            </div>
+            <div class="input-item">
+              <label for="address1">Address 1<span>*</span> </label>
+              <input
+                type="text"
+                required
+                placeholder="Enter first address"
+                id="address1"
+              />
+            </div>
+            <div class="input-item">
+              <label for="address2">Address 2<span>*</span> </label>
+              <input
+                type="text"
+                required
+                placeholder="Enter second address"
+                id="address2"
+              />
+            </div>
+            <div class="input-item">
+              <label for="state">State<span>*</span> </label>
+              <input
+                type="text"
+                required
+                placeholder="Enter your state"
+                id="state"
+              />
+            </div>
+            <div class="input-item">
+              <label for="zip">Zip/Postal Code<span>*</span> </label>
+              <input
+                type="text"
+                required
+                placeholder="Enter your Zip or post code"
+                id="zip"
+              />
+            </div>
+            <div class="input-item">
+              <label for="city">City<span>*</span> </label>
+              <input
+                type="text"
+                required
+                placeholder="Enter your city"
+                id="city"
+              />
+            </div>
+            <div class="input-item">
+              <label for="email">Email Address<span>*</span> </label>
+              <input
+                type="email"
+                required
+                placeholder="Enter your Email Address"
+                id="email"
+              />
+            </div>
+            <div class="input-item">
+              <label for="phone">Phone<span>*</span> </label>
+              <input
+                type="tel"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="Enter your Email Address"
+                id="phone"
+              />
+            </div>
+          </div>
+          <div class="membership">
+            <label for="membership-type"></label>
+            <div class="mebership-group">
+              <div class="member-option">
+                <input type="radio" name="membership-type" id="standard" />
+                <label for="standard">Standard</label>
+              </div>
+              <div class="member-option">
+                <input type="radio" name="membership-type" id="premium" />
+                <label for="premium">Premium</label>
+              </div>
+              <div class="member-option">
+                <input type="radio" name="membership-type" id="ultimate" />
+                <label for="ultimate">Ultimate</label>
+              </div>
+            </div>
+          </div>
+          <div class="contact">
+            <label for="contact"></label>
+            <div class="contact-group">
+              <div class="member-option">
+                <input type="radio" name="contacte" id="phone-contact" />
+                <label for="phone-contact">Phone</label>
+              </div>
+              <div class="member-option">
+                <input type="radio" name="contact" id="email-contact" />
+                <label for="email-contact">Email</label>
+              </div>
+              <div class="member-option">
+                <input type="radio" name="contact" id="any-contact" />
+                <label for="any-contact">Any</label>
+              </div>
+            </div>
+          </div>
+          <h2>Terms and conditions</h2>
+          <p>
+            You consent to receive communications from us electronically. We
+            will communicate with you by e-mail or phone. You agree that all
+            agreements, notices, disclosures and other communications that we
+            provide to you electronically satisfy any legal requirement that
+            such communications be in writing.
+          </p>
+          <p class="button-wrapper">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Created with <span>❤</span> by
+        <a href="http://github.com/Godfredgameli" rel="noopener" target="_blank"
+          >Godfred Gameli</a
+        >
+        Copyright &copy;2021
+      </p>
+    </footer>
+    <!-- form blueprint from https://www.w3docs.com/learn-html/html-form-templates.html  -->
+  </body>
+</html>

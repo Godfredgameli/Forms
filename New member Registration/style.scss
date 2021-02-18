@@ -1,0 +1,111 @@
+html, body, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form-wrapper{
+        width: 800px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 0 8px  #669999; 
+        border-radius: 10px;
+        margin: 50px 0;
+        
+        .banner{
+            width: 100%;
+            height: 400px;
+            color: white;
+            text-align: center;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://picjumbo.com/wp-content/uploads/woman-working-on-macbook-1080x720.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .header{
+                h1{
+                    vertical-align: middle;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 700;
+                    font-size: 50px;
+                }
+
+            }   
+        }
+
+        form{
+            color: gray;
+            font-size: 25px;
+            .inputs{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .input-item{
+                    width: 48%;
+                    margin-top: 20px;
+                    label{
+                        span{
+                            color: red;
+                        }
+                    }
+                    input{
+                        width: 100%;
+                        height: 40px;
+                        padding-left: 10px;
+                        border: 1px solid #a3a3a3;
+                    }
+                }
+            }
+            .membership, .contact{
+                margin: 20px 0;
+            }
+            .button-wrapper{
+                width: 100%;
+                margin: 30px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button{
+                    padding: 10px 60px;
+                    background-color: rgb(102, 160, 207);
+                    color: white;
+                    border: none;
+                    font-size: 25px;
+                    border-radius: 8px;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: rgba(102, 160, 207, 0.5);
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    bottom: 0;
+    margin-top: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+
+    p{
+        text-align: center;
+        span{
+            color: red;
+        }
+        a{
+            color: green;
+            text-decoration: none;
+        }
+    }
+}

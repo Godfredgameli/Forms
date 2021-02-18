@@ -1,0 +1,119 @@
+html, body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-wrapper .form-wrapper {
+  width: 800px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 0 8px  #669999;
+  border-radius: 10px;
+  margin: 50px 0;
+}
+
+.main-wrapper .form-wrapper .banner {
+  width: 100%;
+  height: 400px;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://picjumbo.com/wp-content/uploads/woman-working-on-macbook-1080x720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-wrapper .form-wrapper .banner .header h1 {
+  vertical-align: middle;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.main-wrapper .form-wrapper form {
+  color: gray;
+  font-size: 25px;
+}
+
+.main-wrapper .form-wrapper form .inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-wrapper .form-wrapper form .inputs .input-item {
+  width: 48%;
+  margin-top: 20px;
+}
+
+.main-wrapper .form-wrapper form .inputs .input-item label span {
+  color: red;
+}
+
+.main-wrapper .form-wrapper form .inputs .input-item input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid #a3a3a3;
+}
+
+.main-wrapper .form-wrapper form .membership, .main-wrapper .form-wrapper form .contact {
+  margin: 20px 0;
+}
+
+.main-wrapper .form-wrapper form .button-wrapper {
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-wrapper .form-wrapper form .button-wrapper button {
+  padding: 10px 60px;
+  background-color: #66a0cf;
+  color: white;
+  border: none;
+  font-size: 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.main-wrapper .form-wrapper form .button-wrapper button:hover {
+  background-color: rgba(102, 160, 207, 0.5);
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  margin-top: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer p span {
+  color: red;
+}
+
+footer p a {
+  color: green;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
