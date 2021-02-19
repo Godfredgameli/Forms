@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #666;
+}
+
+.form-container {
+  max-width: 340px;
+  min-height: 460px;
+  padding: 10px 30px;
+  border: solid 1px #ccc;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.31);
+  border-radius: 8px;
+  background-color: #ebebeb;
+  /* Customize the label (the container) */
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+
+.form-container h1 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.form-container .account input {
+  margin: 10px 0;
+}
+
+.form-container label i {
+  color: white;
+  background-color: #1c87c9;
+  padding: 16px 20px;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+}
+
+.form-container #email, .form-container #password, .form-container #fullname {
+  height: 48px;
+  width: calc(100% - 55px);
+  margin: 10px 0 10px -5px;
+  padding-left: 10px;
+  border-radius: 0 5px 5px 0;
+  border: #666 1px solid;
+  border-left: none;
+}
+
+.form-container .gender {
+  margin: 10px 0;
+}
+
+.form-container .button-container {
+  margin: 10px 0;
+}
+
+.form-container .button-container p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.form-container .button-container p a {
+  color: blue;
+}
+
+.form-container .button-container p button {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  background-color: #1c87c9;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container .button-container p button:hover, .form-container .button-container p button:focus {
+  background-color: #62b6ea;
+}
+
+.form-container .label-radio {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+
+.form-container .label-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.form-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.form-container .label-radio:hover input ~ .checkmark {
+  background-color: #bbb;
+}
+
+.form-container .label-radio input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.form-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form-container .label-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.form-container .label-radio .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+}
+
+footer p {
+  margin: 25px 0;
+}
+
+footer p span {
+  color: red;
+}
+
+footer p a {
+  text-decoration: none;
+  color: green;
+}
+/*# sourceMappingURL=style.css.map */
